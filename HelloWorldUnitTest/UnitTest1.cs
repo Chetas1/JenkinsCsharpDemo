@@ -1,0 +1,19 @@
+using JenkinsDemo;
+using NUnit.Framework;
+
+namespace HelloWorldUnitTest
+{
+    public class Tests
+    {
+        [SetUp]
+        public void Setup()
+        {
+        }
+
+        [Test]
+        public void Test1()
+        {
+            Assert.AreEqual("Hello World", Program.createMessage());
+        }
+    }
+}
